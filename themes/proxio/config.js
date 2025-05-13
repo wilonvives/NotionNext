@@ -36,7 +36,7 @@ const CONFIG = {
   PROXIO_HERO_BUTTON_9_TEXT: 'Substack',
   PROXIO_HERO_BUTTON_9_URL: 'https://substack.com/@wilonvives',
   PROXIO_HERO_BUTTON_9_ICON: 'https://companieslogo.com/img/orig/substack-3fcbaa60.png?t=1720244494',
-  PROXIO_HERO_BUTTON_10_TEXT: 'Substack',
+  PROXIO_HERO_BUTTON_10_TEXT: 'X',
   PROXIO_HERO_BUTTON_10_URL: 'https://x.com/WilonVives',
   PROXIO_HERO_BUTTON_10_ICON: 'https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-contained-512.png',
   PROXIO_HERO_BUTTON_11_TEXT: 'Threads',
