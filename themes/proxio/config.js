@@ -18,9 +18,6 @@ const CONFIG = {
   PROXIO_HERO_BUTTON_3_TEXT: 'Instagram',
   PROXIO_HERO_BUTTON_3_URL: 'https://www.instagram.com/wilonvives/',
   PROXIO_HERO_BUTTON_3_ICON: 'https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-512.png',
-  PROXIO_HERO_BUTTON_3_TEXT: 'Whatsapp',
-  PROXIO_HERO_BUTTON_3_URL: 'http://wa.me/60174495456',
-  PROXIO_HERO_BUTTON_3_ICON: 'https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-512.png',
   PROXIO_HERO_BUTTON_4_TEXT: 'Whatsapp',
   PROXIO_HERO_BUTTON_4_URL: 'http://wa.me/60174495456',
   PROXIO_HERO_BUTTON_4_ICON: 'https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-512.png',
@@ -45,6 +42,9 @@ const CONFIG = {
   PROXIO_HERO_BUTTON_11_TEXT: 'Threads',
   PROXIO_HERO_BUTTON_11_URL: 'https://www.threads.com/@wilonvives',
   PROXIO_HERO_BUTTON_11_ICON: 'https://cdn4.iconfinder.com/data/icons/threads-by-instagram/128/threads-logo-brand-sign-contained-glyph-circle-512.png',
+  PROXIO_HERO_BUTTON_12_TEXT: '',
+  PROXIO_HERO_BUTTON_12_URL: '',
+  PROXIO_HERO_BUTTON_12_ICON: '',
   
   
   // 英雄区配图，如需隐藏，改为空值即可 ''
