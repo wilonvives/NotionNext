@@ -10,11 +10,23 @@ const CONFIG = {
   PROXIO_HERO_ENABLE: true,
   PROXIO_HERO_TITLE_1: '洞察驱动 · 策略致胜',
   PROXIO_HERO_TITLE_2: '用 30 年战略蓝图陪伴创业者突破增长天花板',
-  PROXIO_HERO_BUTTON_1_TEXT: '预约战略诊断',
-  PROXIO_HERO_BUTTON_1_URL: '/contact',
-  PROXIO_HERO_BUTTON_2_TEXT: '订阅每周洞察',
-  PROXIO_HERO_BUTTON_2_URL: '/newsletter',
-  PROXIO_HERO_BUTTON_2_ICON: '/images/starter/mail.svg',
+export default {
+  HERO_BUTTONS: [
+    {
+      text: '预约战略诊断',
+      url: '/contact',
+      icon: null,       // 没图标就填 null
+      variant: 'primary'
+    },
+    {
+      text: '订阅每周洞察',
+      url: '/newsletter',
+      icon: '/images/starter/mail.svg',
+      variant: 'secondary'
+    },
+    // ……以后想加就 push
+  ]
+}
   
   // 英雄区配图，如需隐藏，改为空值即可 ''
   PROXIO_HERO_BANNER_IMAGE: '', // hero区背景，默认是获取Notion背景，如需另外配置图片可以填写在这里
