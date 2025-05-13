@@ -6,25 +6,26 @@ const CONFIG = {
   PROXIO_WELCOME_COVER_ENABLE: false,
   PROXIO_WELCOME_TEXT: '欢迎来到 Wilon 的星球，点击任意位置启程',
 
+export default {
   /** 英雄区 */
   PROXIO_HERO_ENABLE: true,
   PROXIO_HERO_TITLE_1: '洞察驱动 · 策略致胜',
   PROXIO_HERO_TITLE_2: '用 30 年战略蓝图陪伴创业者突破增长天花板',
-export default {
+
   HERO_BUTTONS: [
     {
       text: '预约战略诊断',
       url: '/contact',
-      icon: null,       // 没图标就填 null
-      variant: 'primary'
+      icon: null,
+      variant: 'primary'      // 建议用 primary / secondary 这种通用词
     },
     {
       text: 'Facebook',
-      url: '/newsletter',
+      url: 'https://facebook.com/your-page',
       icon: 'https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png',
-      variant: 'Facebook'
+      variant: 'secondary'
     },
-    // ……以后想加就 push
+    // ……
   ]
 }
   
