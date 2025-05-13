@@ -6,8 +6,7 @@ const CONFIG = {
   PROXIO_WELCOME_COVER_ENABLE: false,
   PROXIO_WELCOME_TEXT: '欢迎来到 Wilon 的星球，点击任意位置启程',
 
-export default {
-  /** 英雄区 */
+  /* 英雄区 */
   PROXIO_HERO_ENABLE: true,
   PROXIO_HERO_TITLE_1: '洞察驱动 · 策略致胜',
   PROXIO_HERO_TITLE_2: '用 30 年战略蓝图陪伴创业者突破增长天花板',
@@ -17,21 +16,23 @@ export default {
       text: '预约战略诊断',
       url: '/contact',
       icon: null,
-      variant: 'primary'      // 建议用 primary / secondary 这种通用词
+      variant: 'primary'
     },
     {
       text: 'Facebook',
       url: 'https://facebook.com/your-page',
-      icon: 'https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png',
+      icon:
+        'https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png',
       variant: 'secondary'
-    },
-    // ……
-  ]
-}
+    }
+    // …如果还有更多按钮继续往下写
+  ],
+
+  /* 英雄区背景 */
+  PROXIO_HERO_BANNER_IMAGE: '',          // 填图片 URL 或留空
+  PROXIO_HERO_BANNER_IFRAME_URL: ''      // 填 iframe URL 或留空
   
-  // 英雄区配图，如需隐藏，改为空值即可 ''
-  PROXIO_HERO_BANNER_IMAGE: '', // hero区背景，默认是获取Notion背景，如需另外配置图片可以填写在这里
-  PROXIO_HERO_BANNER_IFRAME_URL: '', // hero背景区内嵌背景网页 ，可以配置一个网页地址，例如动画网页https://my.spline.design/untitled-b0c6e886227646c34afc82cdc6de4ca2/
+
 
   /** 博客区（洞察） */
   PROXIO_BLOG_ENABLE: true,
