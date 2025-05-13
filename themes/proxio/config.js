@@ -3,7 +3,7 @@
 
 const CONFIG = {
   /** 欢迎页 */
-  PROXIO_WELCOME_COVER_ENABLE: true,
+  PROXIO_WELCOME_COVER_ENABLE: false,
   PROXIO_WELCOME_TEXT: '欢迎来到 Wilon 的知识星球，点击任意位置启程',
 
   /** 英雄区 */
@@ -29,7 +29,7 @@ const CONFIG = {
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_4: '/images/insight-4.webp',
 
   /** 公告条 */
-  PROXIO_ANNOUNCEMENT_ENABLE: true,
+  PROXIO_ANNOUNCEMENT_ENABLE: false,
 
   /** 特性区 */
   PROXIO_FEATURE_ENABLE: true,
