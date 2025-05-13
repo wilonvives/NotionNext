@@ -4,7 +4,7 @@
 const CONFIG = {
   /** 欢迎页 */
   PROXIO_WELCOME_COVER_ENABLE: false,
-  PROXIO_WELCOME_TEXT: '欢迎来到 Wilon 的知识星球，点击任意位置启程',
+  PROXIO_WELCOME_TEXT: '欢迎来到 Wilon 的星球，点击任意位置启程',
 
   /** 英雄区 */
   PROXIO_HERO_ENABLE: true,
@@ -15,8 +15,10 @@ const CONFIG = {
   PROXIO_HERO_BUTTON_2_TEXT: '订阅每周洞察',
   PROXIO_HERO_BUTTON_2_URL: '/newsletter',
   PROXIO_HERO_BUTTON_2_ICON: '/images/starter/mail.svg',
-  PROXIO_HERO_BANNER_IMAGE: '/images/hero-banner.webp',
-  PROXIO_HERO_BANNER_IFRAME_URL: '',
+  
+  // 英雄区配图，如需隐藏，改为空值即可 ''
+  PROXIO_HERO_BANNER_IMAGE: '', // hero区背景，默认是获取Notion背景，如需另外配置图片可以填写在这里
+  PROXIO_HERO_BANNER_IFRAME_URL: 'https://my.spline.design/untitled-b0c6e886227646c34afc82cdc6de4ca2/', // hero背景区内嵌背景网页 ，可以配置一个网页地址，例如动画网页https://my.spline.design/untitled-b0c6e886227646c34afc82cdc6de4ca2/
 
   /** 博客区（洞察） */
   PROXIO_BLOG_ENABLE: true,
