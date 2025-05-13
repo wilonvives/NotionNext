@@ -19,10 +19,10 @@ export default {
       variant: 'primary'
     },
     {
-      text: '订阅每周洞察',
+      text: 'Facebook',
       url: '/newsletter',
-      icon: '/images/starter/mail.svg',
-      variant: 'secondary'
+      icon: 'https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png',
+      variant: 'Facebook'
     },
     // ……以后想加就 push
   ]
