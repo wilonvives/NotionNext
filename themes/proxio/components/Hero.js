@@ -61,6 +61,18 @@ export const Hero = props => {
                                 )}
 
                             </ul>
+                             <u2 className='mb-10 flex flex-wrap items-center justify-center gap-5'>
+                                {siteConfig('PROXIO_HERO_BUTTON_2_TEXT', null, config) && (
+                                    <li>
+                                        <Link
+                                            href={siteConfig('PROXIO_HERO_BUTTON_2_URL', '')}
+                                            className='inline-flex items-center justify-center rounded-2xl bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2'>
+                                            {siteConfig('PROXIO_HERO_BUTTON_2_TEXT', null, config)}
+                                        </Link>
+                                    </li>
+                                )}
+
+                            </u2>
                         </div>
                     </div>
 
