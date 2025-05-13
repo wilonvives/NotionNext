@@ -3,6 +3,7 @@ import LazyImage from '@/components/LazyImage'
 import { siteConfig } from '@/lib/config'
 import CONFIG from '../config'
 import Link from 'next/link'
+const buttons = config.HERO_BUTTONS
 
 /**
  * 英雄大图区块
@@ -49,38 +50,25 @@ export const Hero = props => {
                                 {siteConfig('PROXIO_HERO_TITLE_2', null, config)}
                             </p>
                             {/* 按钮组 */}
-                              <ul className="mb-10 flex flex-wrap items-center justify-center gap-5">
-                                {/* Button 1 */}
-                                {siteConfig('PROXIO_HERO_BUTTON_1_TEXT', null, config) && (
-                                  <li>
-                                    <Link
-                                      href={siteConfig('PROXIO_HERO_BUTTON_1_URL', '')}
-                                      className="inline-flex items-center justify-center rounded-2xl bg-white px-7 py-[14px] text-base font-medium text-dark shadow-1 transition duration-300 hover:bg-gray-2"
-                                >
-                              {siteConfig('PROXIO_HERO_BUTTON_1_TEXT', null, config)}
-                              </Link>
-                              </li>
-                            )}
-                        {/* Button 2 —— 新增 */}
-                        {siteConfig('PROXIO_HERO_BUTTON_2_TEXT', null, config) && (
-                          <li>
-                            <Link
-                              href={siteConfig('PROXIO_HERO_BUTTON_2_URL', '')}
-                              className="inline-flex items-center justify-center rounded-2xl border border-white px-7 py-[14px] text-base font-medium text-white transition duration-300 hover:bg-white hover:text-dark"
-                            >
-                              {/* 可选图标 */}
-                              {siteConfig('PROXIO_HERO_BUTTON_2_ICON', null, config) && (
-                                <img
-                                  src={siteConfig('PROXIO_HERO_BUTTON_2_ICON', null, config)}
-                                  alt="icon"
-                                  className="mr-2 h-5 w-5 inline-block"
-                                />
-                              )}
-                              {siteConfig('PROXIO_HERO_BUTTON_2_TEXT', null, config)}
-                            </Link>
-                              </li>
-                            )}
-                          </ul>
+                            <ul className="mb-10 flex flex-wrap justify-center gap-5">
+  {buttons.map((btn, idx) => (
+    <li key={idx}>
+      <Link
+        href={btn.url}
+        className={
+          btn.variant === 'primary'
+            ? 'inline-flex items-center rounded-2xl bg-white px-7 py-[14px] font-medium text-dark shadow-1 hover:bg-gray-2'
+            : 'inline-flex items-center rounded-2xl border border-white px-7 py-[14px] font-medium text-white hover:bg-white hover:text-dark'
+        }
+      >
+        {btn.icon && (
+          <img src={btn.icon} alt="" className="mr-2 h-5 w-5 inline-block" />
+        )}
+        {btn.text}
+      </Link>
+    </li>
+  ))}
+</ul>
                         </div>
                     </div>
                 </div>
