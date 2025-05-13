@@ -2,6 +2,9 @@
 import LazyImage from '@/components/LazyImage'
 import { siteConfig } from '@/lib/config'
 import CONFIG from '../config'
+// …
+const config   = props?.NOTION_CONFIG || CONFIG
+const buttons  = config.HERO_BUTTONS || []
 import Link from 'next/link'
 
 export const Hero = props => {
