@@ -48,20 +48,40 @@ export const Hero = props => {
                             <p className='mx-auto mb-9 max-w-[600px] text-base font-medium  sm:text-lg sm:leading-[1.44]'>
                                 {siteConfig('PROXIO_HERO_TITLE_2', null, config)}
                             </p>
-                            {/* 按钮组 */}
-                              <ul className="mb-10 flex flex-wrap items-center justify-center gap-5">
-                                {/* Button 1 */}
-                                {siteConfig('PROXIO_HERO_BUTTON_1_TEXT', null, config) && (
-                                  <li>
-                                    <Link
-                                      href={siteConfig('PROXIO_HERO_BUTTON_1_URL', '')}
-                                      className="inline-flex items-center justify-center rounded-2xl bg-white px-7 py-[14px] text-base font-medium text-dark shadow-1 transition duration-300 hover:bg-gray-2"
-                                >
-                              {siteConfig('PROXIO_HERO_BUTTON_1_TEXT', null, config)}
-                              </Link>
-                              </li>
-                            )}
-                          </ul>
+
+/* ====== 按钮组 ====== */
+const buttons = Array.from({ length: 20 }, (_, i) => {
+  const n = i + 1
+  const text = siteConfig(`PROXIO_HERO_BUTTON_${n}_TEXT`, null, config)
+  if (!text) return null                         // 没写 TEXT 就跳过
+  return {
+    text,
+    url:  siteConfig(`PROXIO_HERO_BUTTON_${n}_URL`,  '#', config),
+    icon: siteConfig(`PROXIO_HERO_BUTTON_${n}_ICON`, null, config),
+    primary: n === 1                             // 第 1 个走白底样式
+  }
+}).filter(Boolean)                               // 去掉空位
+
+/* 把这段放进原来的 <ul> 里 */
+<ul className="mb-10 flex flex-wrap justify-center gap-5">
+  {buttons.map((btn, idx) => (
+    <li key={idx}>
+      <Link
+        href={btn.url}
+        className={
+          btn.primary
+            ? 'inline-flex items-center rounded-2xl bg-white px-7 py-[14px] font-medium text-dark shadow-1 hover:bg-gray-2'
+            : 'inline-flex items-center rounded-2xl border border-white px-7 py-[14px] font-medium text-white hover:bg-white hover:text-dark'
+        }
+      >
+        {btn.icon && <img src={btn.icon} alt="" className="mr-2 h-5 w-5 inline-block" />}
+        {btn.text}
+      </Link>
+    </li>
+  ))}
+</ul>
+
+                                
                         </div>
                     </div>
                 </div>
