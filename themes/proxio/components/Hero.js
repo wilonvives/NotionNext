@@ -61,25 +61,6 @@ export const Hero = props => {
                               </Link>
                               </li>
                             )}
-                        {/* Button 2 —— 新增 */}
-                        {siteConfig('PROXIO_HERO_BUTTON_2_TEXT', null, config) && (
-                          <li>
-                            <Link
-                              href={siteConfig('PROXIO_HERO_BUTTON_2_URL', '')}
-                              className="inline-flex items-center justify-center rounded-2xl border border-white px-7 py-[14px] text-base font-medium text-white transition duration-300 hover:bg-white hover:text-dark"
-                            >
-                              {/* 可选图标 */}
-                              {siteConfig('PROXIO_HERO_BUTTON_2_ICON', null, config) && (
-                                <img
-                                  src={siteConfig('PROXIO_HERO_BUTTON_2_ICON', null, config)}
-                                  alt="icon"
-                                  className="mr-2 h-5 w-5 inline-block"
-                                />
-                              )}
-                              {siteConfig('PROXIO_HERO_BUTTON_2_TEXT', null, config)}
-                            </Link>
-                              </li>
-                            )}
                           </ul>
                         </div>
                     </div>
