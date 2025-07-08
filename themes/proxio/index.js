@@ -115,7 +115,7 @@ const LayoutIndex = props => {
             )}
 
             {/* 公告 */}
-            {siteConfig('PROXIO_ANNOUNCEMENT_ENABLE', true, CONFIG) && <Announcement
+            {siteConfig('PROXIO_ANNOUNCEMENT_ENABLE', false, CONFIG) && <Announcement
                 post={props?.notice}
                 className={
                     'announncement text-center py-16'
@@ -123,28 +123,28 @@ const LayoutIndex = props => {
                 }
 
             {/* 团队介绍 */}
-            {siteConfig('PROXIO_ABOUT_ENABLE', true, CONFIG) && <Team />}
+            {siteConfig('PROXIO_ABOUT_ENABLE', false, CONFIG) && <Team />}
 
             {/* 合作伙伴 */}
-            {siteConfig('PROXIO_BRANDS_ENABLE', true, CONFIG) && <Brand />}
+            {siteConfig('PROXIO_BRANDS_ENABLE', false, CONFIG) && <Brand />}
 
 
             {/* 生涯 */}
-            {siteConfig('PROXIO_CAREER_ENABLE', true, CONFIG) && <Career />}
+            {siteConfig('PROXIO_CAREER_ENABLE', false, CONFIG) && <Career />}
 
             {/* 产品特性 */}
-            {siteConfig('PROXIO_FEATURE_ENABLE', true, CONFIG) && <Features />}
+            {siteConfig('PROXIO_FEATURE_ENABLE', false, CONFIG) && <Features />}
 
             {/* 评价展示 */}
-            {siteConfig('PROXIO_TESTIMONIALS_ENABLE', true, CONFIG) && (
+            {siteConfig('PROXIO_TESTIMONIALS_ENABLE', false, CONFIG) && (
                 <Testimonials />
             )}
             {/* 常见问题 */}
-            {siteConfig('PROXIO_FAQ_ENABLE', true, CONFIG) && <FAQ />}
+            {siteConfig('PROXIO_FAQ_ENABLE', false, CONFIG) && <FAQ />}
 
 
             {/* 行动呼吁 */}
-            {siteConfig('PROXIO_CTA_ENABLE', true, CONFIG) && <CTA />}
+            {siteConfig('PROXIO_CTA_ENABLE', false, CONFIG) && <CTA />}
 
             {siteConfig('PROXIO_WELCOME_COVER_ENABLE', false, CONFIG) && <LoadingCover />}
         </>
