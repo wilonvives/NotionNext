@@ -65,7 +65,7 @@ export const Hero = props => {
                       className={
                         btn.primary
                           ? 'inline-flex items-center rounded-2xl bg-white px-7 py-[14px] font-medium text-dark shadow-1 hover:bg-gray-2'
-                          : 'inline-flex items-center rounded-2xl border border-white px-7 py-[14px] font-medium text-white hover:bg-white hover:text-dark'
+                          : 'inline-flex items-center rounded-2xl border px-7 py-[14px] font-medium text-dark border-dark dark:text-white dark:border-white hover:bg-white hover:text-dark'
                       }
                     >
                       {btn.icon && (
